@@ -1,0 +1,38 @@
+body, html{
+  height: 100%;
+  margin:0;
+  font-family: 'Gotham SSM', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: -8px;
+    background-color: #555;
+    opacity: .93;
+}
+
+ul.navbar li {float: left;}
+
+ul.navbar li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 19px;
+    font-family: 'Gotham SSm', sans-serif ;
+}
+
+
+ul.navbar li a:hover {color: #555;}
+
+/* Hide the list item that contains the link that should open and close the navbar on small screens */
+ul.navbar li.icon {display: none;}

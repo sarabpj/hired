@@ -1,12 +1,56 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+*{
+  box-sizing: border-box;
+}
+
 body, html{
   height: 100%;
   margin:0;
-  font-family: 'Gotham SSM', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1{
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color:#36373e;
 }
 
 
+
+h3{
+  text-align: left;
+  letter-spacing: 4px;
+  color:#36373e;
+  font-weight: 100;
+  font-size:25px;
+}
+
+hr{
+  background: green;
+}
+
+p{
+  color:#595a64;
+  letter-spacing: .8px;
+}
+
+
+
+
+img, embed, object, video {
+  /*min-width: 450px;*/
+  max-width: 100%;
+  /*height : auto;*/
+  /*less than 400*/
+
+}
+
+
+/*nav bar*/
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -27,12 +71,107 @@ ul.navbar li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 19px;
-    font-family: 'Gotham SSm', sans-serif ;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif ;
 }
 
 
 ul.navbar li a:hover {color: #555;}
 
+
 /* Hide the list item that contains the link that should open and close the navbar on small screens */
 ul.navbar li.icon {display: none;}
+
+
+div.title{
+  background: rgba(28,183,140, 0.22);
+  margin-top: -10px;
+}
+
+div.title h1{
+  font-size: 40px;
+  font-weight: 100;
+  color:#787878 
+}
+
+div.container{
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  margin: 0;
+/*  margin-right: auto;
+  margin-left:auto;
+  width: 100%;*/
+}
+
+div.container p{
+  line-height: 30px;
+}
+
+
+
+
+
+.about-report{
+  color:#595a64;
+  letter-spacing: .8px;
+}
+
+
+
+.methodology , .about {
+  background: #595a64 ;
+
+}
+
+.methodology p, 
+.about p
+{
+  color: #f4f4f7;
+
+}
+
+.methodology h3, 
+.about h3{
+  text-align:center;
+  color: #f4f4f7;
+}
+
+/* MEDIA QUERIES*/
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.navbar li {display: none;}
+  ul.navbar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:580px) {
+  div.container{
+    padding-right: 20px;
+    padding-left: 20px;
+    /*width: 40%*/
+  }
+/*  img {
+    min-width: 100px;
+}*/
+}
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+@media screen and (max-width:680px) {
+  ul.navbar.responsive {position: relative;}
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }

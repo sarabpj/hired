@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 *{
   box-sizing: border-box;
@@ -7,16 +7,17 @@
 body, html{
   height: 100%;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
 
 h1{
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 200;
   color:#36373e;
+  text-transform: uppercase;
 }
 
 
@@ -28,10 +29,11 @@ h3{
   font-weight: 100;
   font-size:25px;
   padding-top: 30px;
+  text-transform: uppercase;
 }
 
 hr{
-  background: 'green';
+ max-width: 780px;
 }
 
 p{
@@ -49,18 +51,18 @@ h3+p{
 
 
 img {
-
   max-width: 100%;
-
-
 }
 
-#wrapper{
+/* Content Structue */
+.wrapper{
   width: 90%;
-  max-width: 980px;
+  max-width: 800px;
   min-width: 320px;
   margin: auto;
 }
+
+
 
 /*nav bar*/
 ul.navbar {
@@ -70,7 +72,7 @@ ul.navbar {
     overflow: hidden;
     position: relative;
     top: -8px;
-    background-color: #555;
+    background-color: #595a64;
     opacity: .93;
 }
 
@@ -96,7 +98,7 @@ ul.navbar li.icon {display: none;}
 
 
 div.title{
-  background: rgba(28,183,140, 0.22);
+  background: #bfeddf;
   margin-top: -10px;
 }
 
@@ -107,17 +109,7 @@ div.title h1{
   margin-top:0px;
   padding-bottom: 30px;
   padding-top: 30px;
-}
-
-div.container{
-  /*padding-top: 30px;*/
-/*  padding-left: 100px;
-  padding-right: 100px;*/
-  padding-bottom: 20px;
-  margin: 0;
-/*  margin-right: auto;
-  margin-left:auto;
-  width: 100%;*/
+  padding-left: 10px;
 }
 
 
@@ -125,30 +117,32 @@ div.container h3 {
   line-height: 30px;
   max-width: 880px;
   margin: 0 auto;
+
 }
 
 
 div.container p{
   line-height: 30px;
-  max-width: 880px;
+  max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 
 
-
-
-
-.methodology , .about {
-  background: #595a64 ;
-
+footer{
+  background: #595a64;
 }
+
+
+
 
 .methodology p, 
 .about p
 {
   color: #f4f4f7;
-
+  padding-bottom: 30px;
+  padding-top: 0px;
 }
 
 .methodology h3, 
@@ -168,15 +162,28 @@ div.container p{
     display: inline-block;
   }
 }
-@media screen and (max-width:680px) {
-  div.container{
+@media screen and (max-width:600px) {
+/*  div.container{
     padding-right: 20px;
     padding-left: 20px;
-    /*width: 40%*/
+    width: 40%;
   }
-/*  img {
+  img {
     min-width: 100px;
 }*/
+
+/*  .one_half, 
+  .one_third, 
+  .two_third, 
+  .three_fourth, 
+  .one_fourth, 
+  .full_column{
+    width: 70%;
+    max-width: 900px; 
+    margin:auto;
+  }*/
+
+  
 }
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
 @media screen and (max-width:680px) {
